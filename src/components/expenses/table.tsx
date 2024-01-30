@@ -23,13 +23,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-import { Button } from "../ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
 import { Input } from "../ui/input";
 import { DataTablePagination } from "./table-pagination";
 import { DataTableViewOptions } from "./table-view-options";

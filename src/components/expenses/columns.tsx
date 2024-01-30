@@ -1,11 +1,9 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
-import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 
 import { Expense } from "@/models/expense";
 
-import { Button } from "../ui/button";
 import { DataTableColumnHeader } from "./table-column-header";
 
 export const columns: ColumnDef<Expense>[] = [
