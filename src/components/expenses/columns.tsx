@@ -2,7 +2,7 @@
 
 import { ColumnDef } from "@tanstack/react-table";
 
-import { Expense } from "@/models/expense";
+import { Expense } from "@/models/expenses";
 
 import { DataTableColumnHeader } from "./table-column-header";
 

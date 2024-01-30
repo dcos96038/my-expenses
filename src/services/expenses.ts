@@ -1,4 +1,4 @@
-import { Expense } from "@/models/expense";
+import { Expense } from "@/models/expenses";
 
 export class ExpensesService {
   private constructor(private readonly expenses: Expense[]) {}
