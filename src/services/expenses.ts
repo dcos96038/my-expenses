@@ -17,7 +17,7 @@ export class ExpensesService {
       .split("\n")
       .slice(1)
       .map((row) => {
-        const [date, description, amount, category] = row.split("\t");
+        const [_, date, description, amount, category] = row.split("\t");
         return {
           date,
           amount: parseFloat(amount),
