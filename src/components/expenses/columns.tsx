@@ -1,21 +1,31 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
+import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 
 import { Expense } from "@/models/expense";
+
+import { Button } from "../ui/button";
+import { DataTableColumnHeader } from "./table-column-header";
 
 export const columns: ColumnDef<Expense>[] = [
   {
     accessorKey: "date",
-    header: "Date",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Date" />
+    ),
   },
   {
     accessorKey: "description",
-    header: "Description",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Description" />
+    ),
   },
   {
     accessorKey: "amount",
-    header: "Amount",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Amount" />
+    ),
     cell: (props) => {
       const parsedAmount = props.row.original.amount.toLocaleString("es-ar", {
         style: "currency",
@@ -28,6 +38,8 @@ export const columns: ColumnDef<Expense>[] = [
   },
   {
     accessorKey: "category",
-    header: "Category",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Category" />
+    ),
   },
 ];
